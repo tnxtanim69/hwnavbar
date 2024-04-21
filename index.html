@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./icon.webp">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>bdtickets | Bus Ticket Booking</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        src="https://bdtickets.com/images/logo-new-2.png"
+        alt="Logo"
+        width="150px"
+      />
+      <div class="links">
+        <div class="link">
+          <i class="fas fa-bus"></i>
+          <p>Bus</p>
+        </div>
+        <div class="link">
+          <i class="fas fa-plane"></i>
+          <p>Air</p>
+        </div>
+        <div class="link">
+          <i class="fas fa-ship"></i>
+          <p>Ship</p>
+        </div>
+        <div class="link">
+          <i class="fas fa-bed"></i>
+          <p>Hotel</p>
+        </div>
+      </div>
+      <div class="call">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <p>Call To Book</p>
+          <p>16460</p>
+        </div>
+      </div>
+      <div class="my-bookings">
+        <i class="fa-solid fa-gear"></i>
+        <p>My Bookings</p>
+      </div>
+      <div class="profile"><i class="fa-solid fa-user"></i></div>
+    </div>
+    <div class="main">
+      <div class="choose-routes">
+        <div class="transports">
+          <div class="transport active first">
+            <i class="fas fa-bus"></i>
+            <p>Bus</p>
+          </div>
+          <div class="transport middle">
+            <i class="fas fa-plane"></i>
+            <p>Air</p>
+          </div>
+          <div class="transport middle">
+            <i class="fas fa-ship"></i>
+            <p>Ship</p>
+          </div>
+          <div class="transport last">
+            <i class="fas fa-bed"></i>
+            <p>Hotel</p>
+          </div>
+        </div>
+        <div class="select-section">
+          <div class="from-to">
+            <div class="from">
+              <label for="from">Going From</label>
+              <p class="select-going-from">Select Place</p>
+              <div class="options optionsf">
+                <input
+                  type="text"
+                  class="search searchf"
+                  placeholder="Search By City"
+                />
+                <div class="filter-option"></div>
+              </div>
+            </div>
+            <div class="switch-arrow">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div class="to">
+              <label for="to">Going To</label>
+              <p class="select-going-to">Select Place</p>
+              <div class="options optionst">
+                <input
+                  type="text"
+                  class="search searcht"
+                  placeholder="Search By City"
+                />
+                <div class="filter-option"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dates">
+            <div class="from">
+              <label for="from">Journey Date</label>
+              <input class="date-input date" type="date" id="from" />
+            </div>
+            <div class="to" style="opacity: 0.4; cursor: not-allowed">
+              <label for="to" style="cursor: not-allowed">Return Date</label>
+              <input
+                style="cursor: not-allowed"
+                class="date-input date-return"
+                type="date"
+                id="to"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tranding-place-section">
+          <p style="opacity: 0.5">Trending Search:</p>
+          <div class="tranding-places"></div>
+        </div>
+        <button type="submit" class="search-btn">Search Bus</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
